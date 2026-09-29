@@ -45,9 +45,6 @@
             <img src="snookers-logo.png" alt="Snooker's Billiard Hall logo">
             <span>Snooker's Billiard Hall</span>
         </div>
-        <nav>
-            <button class="customerNavBtn" type="button" onclick="showCustomerLookup()">View My Reservation</button>
-        </nav>
     </header>
 
     <main class="customerMain">
@@ -65,10 +62,21 @@
                         <button class="customerLightBtn" type="button" onclick="showCustomerLookup()">View My Reservation</button>
                     </div>
                 </div>
-                <div class="customerHeroCard">
+                <div class="customerHeroCard customerLocationCard">
                     <span>Plan your visit</span>
                     <h3>Reserve before you arrive</h3>
                     <p>Choose your facility, date, start time, and duration. Keep your reservation ID for checking your booking later.</p>
+                    <div class="customerMapWrap">
+                        <iframe
+                            class="customerMap"
+                            title="Snooker's Billiard Hall location"
+                            src="https://www.google.com/maps?q=14.893428,120.779638&z=16&output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <a class="customerDirectionsBtn" href="https://maps.app.goo.gl/wcJtSFaGfmjFdi429" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
                 </div>
             </div>
 
